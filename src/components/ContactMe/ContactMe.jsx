@@ -8,7 +8,7 @@ import { UilPhone, UilEnvelope } from '@iconscout/react-unicons'
 export default function ContactMe() {
   return (
     <>
-      <section className="greybg">
+      <section className="greybg" id="contact">
         <div className={"container"}>
           <div>
             <div>

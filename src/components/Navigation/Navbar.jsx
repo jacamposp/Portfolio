@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Link as Link1 } from "react-scroll";
 
 import Icon from "./Icon";
 import Button from "../UI/Button";
@@ -36,19 +37,19 @@ export default function NavBar() {
           <Icon className={`${classes.icon} ${classes.logo}`} />
           <ul className={classes.navList}>
             <li>
-              <NavLink className={classes.active}>Home</NavLink>
+              <Link1 to="home" activeClass={classes.active} spy={true} smooth={true} duration={500}>Home</Link1>
             </li>
             <li>
-              <NavLink>About Me</NavLink>
+              <Link1 to="about" activeClass={classes.active} spy={true} smooth={true} duration={500}>About Me</Link1>
             </li>
             <li>
-              <NavLink>Services</NavLink>
+              <Link1 to="services" activeClass={classes.active} spy={true} smooth={true} duration={500}>Services</Link1>
             </li>
             <li>
-              <NavLink>Projects</NavLink>
+              <Link1 to="projects" activeClass={classes.active} spy={true} smooth={true} duration={500}>Projects</Link1>
             </li>
             <li>
-              <NavLink>Contact me</NavLink>
+              <Link1 to="contact" activeClass={classes.active} spy={true} smooth={true} duration={500}>Contact me</Link1>
             </li>
           </ul>
         </div>

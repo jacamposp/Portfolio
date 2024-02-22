@@ -4,6 +4,8 @@ import Button from "../UI/Button";
 import classes from "./Home.module.css";
 
 import avatar from "../../assets/Avatar3.png";
+
+//icons
 import cssLogo from "../../assets/csslogo.svg";
 import reactLogo from "../../assets/reactlogo.svg";
 import jsLogo from "../../assets/jslogo.svg";
@@ -11,7 +13,7 @@ import jsLogo from "../../assets/jslogo.svg";
 export default function Home() {
   return (
     <>
-      <div className={classes.overlay}>
+      <div className={classes.overlay} id="home">
         <div className="container">
           <div className={classes.home_Container}>
             <div className={classes.name}>
@@ -24,9 +26,9 @@ export default function Home() {
                   sequence={[
                     "Joe",
                     1000,
-                    "Website Designer",
-                    1000,
                     "Web Developer",
+                    1000,
+                    "App Developer",
                     1000,
                     "UI/UX Designer",
                     1000,
@@ -61,7 +63,7 @@ export default function Home() {
               </p>
             </div>
             <div className={classes.contact}>
-              <Button>Contact Me</Button>
+              <Button moveTo={'contact'} smooth={true} duration={500}>Contact Me</Button>
             </div>
             <div className={classes.avatar}>
               <div>

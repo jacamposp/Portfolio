@@ -11,6 +11,7 @@
     cursor: pointer;
     transition: 400ms;
     max-width: 150px;
+    text-decoration: none;
   }
   
   .btnText{
@@ -19,6 +20,10 @@
     font-weight: 700;
     font-size: 1em;
     transition: 400ms;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
   
   .btn:hover {

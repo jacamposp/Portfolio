@@ -45,6 +45,7 @@ nav {
   color: var(--black);
   font-size: 18px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .navList a:hover {

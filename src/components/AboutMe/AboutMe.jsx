@@ -6,7 +6,7 @@ import Table from './Table';
 export default function AboutMe() {
   return (
     <>
-      <section className={`whitebg`}>
+      <section className={`whitebg`} id='about'>
         <div className={`container`}>
           <div className={classes.AboutMeContainer}>
             <div className={classes.AboutMe}>
