@@ -1,0 +1,75 @@
+header {
+  background: rgb(253, 246, 236);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 246, 236, 1) 0%,
+    rgba(253, 246, 236, 1) 100%
+  );
+}
+nav {
+  padding: 0.75rem;
+}
+
+.navContainer {
+  max-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  /* corregir para que se adapte al contenedor */
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.navList li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navList a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navList a:hover {
+  color: var(--orange);
+}
+
+.navList a.active {
+  color: var(--orange);
+}
+
+.is_sticky {
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.isNot_sticky {
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+}

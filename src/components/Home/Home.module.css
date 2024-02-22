@@ -1,0 +1,104 @@
+.overlay {
+  background: rgb(243, 202, 144);
+  background: linear-gradient(
+    0deg,
+    rgba(243, 202, 144, 1) 0%,
+    rgba(253, 246, 236, 1) 100%
+  );
+}
+
+.home_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.name h1{
+  font-size: 40px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+
+.job p{
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.job span {
+  color: var(--orange);
+}
+
+.description{
+  max-width: 570px;
+}
+
+.description p {
+  color: var(--darkGrey);
+}
+
+.contact {
+  padding-top: 20px;
+}
+
+.logos{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logos img {
+  height: 50px;
+  width: 50px;
+ }
+
+.avatar {
+  padding-top: 30px;
+  margin-top: 10px;
+}
+
+.avatar img {
+  position: relative;
+  bottom: -7px;
+  max-width: 512px;
+  height: auto;
+}
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.react {
+  -webkit-animation: rotating 20s linear infinite;
+  -moz-animation: rotating 20s linear infinite;
+  -ms-animation: rotating 20s linear infinite;
+  -o-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
+}

@@ -1,0 +1,28 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 25px;
+    background-color: var(--orange);
+    outline: 3px var(--orange) solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    max-width: 150px;
+  }
+  
+  .btnText{
+    color: var(--white);
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .btn:hover {
+    background-color: var(--darkOrange);
+    outline: 3px var(--darkOrange) solid;
+
+  }
