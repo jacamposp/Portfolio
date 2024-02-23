@@ -1,17 +1,33 @@
+.titleContainer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.titleContainer h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.titleContainer p{
+    font-size: 15px;
+}
+
 .form_container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(60%,1fr));
-    gap: 0px 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(60%, 1fr));
+  gap: 0px 4rem;
 }
 
-.formBg{
-    padding: 1.5rem;
-    box-shadow: 0 0 3px #c9c9c9;
-    background-color: var(--white);
-    border-radius: 0.375rem;
+.formBg {
+  padding: 1.5rem;
+  box-shadow: 0 0 3px #c9c9c9;
+  background-color: var(--white);
+  border-radius: 0.375rem;
 }
 
-.form_container input, .form_container textarea {
+.form_container input,
+.form_container textarea {
   font-size: 15px;
   padding: 0.5rem 0.75rem;
   width: 100%;
@@ -21,10 +37,10 @@
   border-style: solid;
 }
 
-.form_container h5{
-    font-size: 17px;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+.form_container h5 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 .form_grid {
   display: grid;
@@ -33,28 +49,34 @@
 }
 
 .name {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin-bottom: 1.5rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-bottom: 1.5rem;
 }
 
 .email {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .subject {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-bottom: 1.5rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 1.5rem;
 }
 
 .message {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-bottom: 1.5rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 1.5rem;
 }
 
-.info_container{
-    display: flex;
-    flex-direction: column;
+.info_container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.info_container a{
+    text-decoration: none;
+    color: var(--darkGrey);
 }

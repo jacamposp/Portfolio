@@ -35,6 +35,7 @@
 
 .description p {
   color: var(--darkGrey);
+  text-align: center;
 }
 
 .contact {

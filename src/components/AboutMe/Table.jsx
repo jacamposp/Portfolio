@@ -14,8 +14,8 @@ export default function Table() {
             <div className={classes.dataItemContainer}>
               <div className={classes.dataItem}>
                 <div>
-                  <div className={classes.year}>3M Logo</div>
-                  <div>2019</div>
+                  <div className={classes.year}>3M</div>
+                  <div>2019 - Today</div>
                 </div>
               </div>
               <div className={classes.dataItem}>
@@ -26,12 +26,12 @@ export default function Table() {
             <div className={classes.dataItemContainer}>
               <div className={classes.dataItem}>
                 <div>
-                  <div className={classes.year}>3M Logo</div>
-                  <div>2019</div>
+                  <div className={classes.year}>Bosch</div>
+                  <div>2018 - 2019</div>
                 </div>
               </div>
               <div className={classes.dataItem}>
-                <div>Web Developer</div>
+                <div>Junior Developer</div>
                 <div>Descripcion de puesto.</div>
               </div>
             </div>
@@ -45,24 +45,36 @@ export default function Table() {
             <div className={classes.dataItemContainer}>
               <div className={classes.dataItem}>
                 <div>
-                  <div className={classes.year}>3M Logo</div>
-                  <div>2019</div>
+                  <div className={classes.year}>Bachelor</div>
+                  <div>2020 - 2026</div>
                 </div>
               </div>
               <div className={classes.dataItem}>
-                <div>Web Developer</div>
+                <div>Computer Science</div>
                 <div>Descripcion de puesto.</div>
               </div>
             </div>
             <div className={classes.dataItemContainer}>
               <div className={classes.dataItem}>
                 <div>
-                  <div className={classes.year}>3M Logo</div>
-                  <div>2019</div>
+                  <div className={classes.year}>Course</div>
+                  <div>2023</div>
                 </div>
               </div>
               <div className={classes.dataItem}>
-                <div>Web Developer</div>
+                <div>UX/UI</div>
+                <div>Descripcion de puesto.</div>
+              </div>
+            </div>
+            <div className={classes.dataItemContainer}>
+              <div className={classes.dataItem}>
+                <div>
+                  <div className={classes.year}>Technician</div>
+                  <div>2016 - 2018</div>
+                </div>
+              </div>
+              <div className={classes.dataItem}>
+                <div>Software Development</div>
                 <div>Descripcion de puesto.</div>
               </div>
             </div>

@@ -40,20 +40,35 @@
   text-align: center;
   width: 100%;
   justify-content: space-between;
+  margin-top: 5rem;
 }
 
 .skillsContent {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  max-width: 110px;
 }
 
 .skillsBackground {
+  transition: padding 0.5s;
+  overflow: hidden;
+  position: relative;
+}
+
+.skillsBackground:hover {
+  padding: 40px 30px;
   border-radius: 60px;
   background: var(--grey);
   display: inline-block;
-  text-align: center;
-  padding: 40px 30px;
+}
+
+.skillName{
+  opacity: 0;
+}
+
+.skillsBackground:hover .skillName{
+  opacity: 1;
+  animation: opacityText 0.5s;
 }
 
 .icon img {
@@ -103,4 +118,14 @@
     color: var(--jnj-title-color);
     margin-right: 30px;
     min-width: 120px;
+}
+
+@keyframes opacityText {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
 }
