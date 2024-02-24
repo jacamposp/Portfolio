@@ -74,3 +74,9 @@ nav {
   position: fixed;
   width: 100%;
 }
+
+@media (width < 1024px) {
+  .navList{
+    display: none;
+  }
+}

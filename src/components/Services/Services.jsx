@@ -6,7 +6,7 @@ import { UilLaptop, UilArrowRight, UilBrowser, UilApps } from "@iconscout/react-
 export default function Services() {
   return (
     <>
-      <section className={`greybg`} style={{height:"100vh"}} id="services">
+      <section className={`greybg`} id="services">
         <div className={"container"}>
           <div className={classes.services_title_container}>
             <h3 className={classes.services_title}>What do i offer?</h3>

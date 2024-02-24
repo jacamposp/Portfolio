@@ -12,10 +12,11 @@
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
+  text-align: center;
 }
 
 .name h1{
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.5;
   margin-bottom: 0px;
 }
@@ -67,6 +68,19 @@
   height: auto;
 }
 
+.react {
+  -webkit-animation: rotating 20s linear infinite;
+  -moz-animation: rotating 20s linear infinite;
+  -ms-animation: rotating 20s linear infinite;
+  -o-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
+}
+
+@media (width <= 480px) {
+  .avatar img {
+    max-width: 20rem;
+  }
+}
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
@@ -95,11 +109,4 @@
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-.react {
-  -webkit-animation: rotating 20s linear infinite;
-  -moz-animation: rotating 20s linear infinite;
-  -ms-animation: rotating 20s linear infinite;
-  -o-animation: rotating 20s linear infinite;
-  animation: rotating 20s linear infinite;
 }

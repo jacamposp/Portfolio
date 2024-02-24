@@ -59,3 +59,9 @@
 .card_container:hover .link{
     color: var(--darkOrange);
 }
+
+@media (width <= 480px) {
+    .services_container{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+}

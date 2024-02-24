@@ -16,12 +16,12 @@
 }
 
 .AboutMeSubtitle {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--orange);
-    position: relative;
-    display: inline-block;
-    margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--orange);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .skillsContainer {
@@ -50,25 +50,10 @@
 }
 
 .skillsBackground {
-  transition: padding 0.5s;
-  overflow: hidden;
   position: relative;
-}
-
-.skillsBackground:hover {
   padding: 40px 30px;
   border-radius: 60px;
   background: var(--grey);
-  display: inline-block;
-}
-
-.skillName{
-  opacity: 0;
-}
-
-.skillsBackground:hover .skillName{
-  opacity: 1;
-  animation: opacityText 0.5s;
 }
 
 .icon img {
@@ -77,55 +62,75 @@
 }
 
 .tableContainer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .tableContainer h3 {
-    margin-bottom: 15px;
-    font-size: 35px;
-    line-height: 45px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  line-height: 45px;
 }
 
 .tableContainer img {
-    height: 20rem;
-    width: 100%;
+  height: 20rem;
+  width: 100%;
 }
 
-.dataContainer{
-    display: flex;
-    flex-direction: column;
+.dataContainer {
+  display: flex;
+  flex-direction: column;
 }
 
-.dataItemContainer{
-    display: flex;
-    flex-direction: row;    
+.dataItemContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 .dataItem {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid #dddddd;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #dddddd;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .year {
-    line-height: 26px;
-    font-weight: 600;
-    color: var(--jnj-title-color);
-    margin-right: 30px;
-    min-width: 120px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--jnj-title-color);
+  margin-right: 30px;
+  min-width: 120px;
 }
 
-@keyframes opacityText {
-  0% {
-    opacity: 0;
+@media (width <= 480px) {
+  .AboutMeContainer {
+    flex-direction: column;
   }
-  100%{
-    opacity: 1;
+
+  .AboutMe {
+    padding: 0;
+    width: 100%;
+  }
+
+  .skillsContainer{
+    width: 100%;
   }
   
+  .skillsColumn{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .skillsContent{
+    margin: 10px auto;
+  }
+
+  .tableContainer {
+    flex-direction: column;
+  }
 }
