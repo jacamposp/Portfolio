@@ -62,6 +62,7 @@ export default function ContactMe() {
             </div>
           </div>
         </div>
+        <p style={{textAlign:'center'}}>Section on construction</p>
       </section>
     </>
   );

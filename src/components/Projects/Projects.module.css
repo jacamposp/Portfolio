@@ -1,0 +1,32 @@
+.projects_Container{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 30px;
+}
+
+.projects_Text{
+    text-align: center;
+}
+
+.projects_Container img {
+    width: 257px;
+    height: 257px;
+}
+
+.projects_Container img:hover {
+    scale: 1.2;
+    transition-duration: 0.5s;
+}
+
+.projects{
+    justify-self: center;
+}
+
+@media (width <= 480px) {
+    .projects_Container{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        align-items: center;
+        margin: auto;
+    }
+}
