@@ -1,67 +1,72 @@
-.services_title_container{
-    display: grid;
-    grid-template-columns: repeat(1,minmax(0,1fr));
-    text-align: center;
+.services_title_container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  text-align: center;
 }
-.services_title{
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.services_container{
-    margin-top: 5rem;
-    display: grid;
-    grid-template-columns: repeat(3,minmax(0,1fr));
-    gap: 30px;
+.services_title {
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
-.card_container{
-    background-color: var(--white);
-    border-radius: 1rem;
-    padding: 2.5rem 1.5rem;
-    box-shadow: 0 0 3px rgba(228,231,235) ;
+.services_container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
-.card_container:hover{
-    box-shadow: 0 5px 13px rgba(60,72,88,.2);
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    cursor: pointer;
+.card_container {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 0 3px rgba(228, 231, 235);
 }
 
-.services_icon{
-    margin-bottom: 12px;
+.card_container:hover {
+  box-shadow: 0 5px 13px rgba(60, 72, 88, 0.2);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.services_icon {
+  margin-bottom: 12px;
 }
 
 .card_container .card_title {
-    font-size: 17px;
-    font-weight: 500;
-    color: var(--black);
-    text-decoration: inherit;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: inherit;
 }
 
 .card_container:hover .card_title {
-    color: var(--darkOrange);
+  color: var(--darkOrange);
 }
 
-.card_container .card_text{
-    font-size: 15px;
-    color: var(--darkGrey);
+.card_container .card_text {
+  font-size: 15px;
+  color: var(--darkGrey);
 }
 
-.card_container .link{
-    display: inline-flex;
-    align-items: center;
-    text-decoration: inherit;
-    color: var(--black);
+.card_container .link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: inherit;
+  color: var(--black);
 }
 
-.card_container:hover .link{
-    color: var(--darkOrange);
+.card_link {
+  position: relative;
+  bottom: 0;
+}
+.card_container:hover .link {
+  color: var(--darkOrange);
 }
 
-@media (width <= 480px) {
-    .services_container{
-        grid-template-columns: repeat(1,minmax(0,1fr));
-    }
-}
+
+/* @media (width <= 480px) {
+  .services_container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+} */

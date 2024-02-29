@@ -39,7 +39,7 @@ export default function ContactMe() {
                     </div>
                   </div>
                   <div>
-                    <Button>Send Message</Button>
+                    <Button moveTo={'contact'}>Send Message</Button>
                   </div>
                 </form>
               </div>

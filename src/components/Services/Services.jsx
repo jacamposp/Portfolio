@@ -1,7 +1,12 @@
+import Card from "./Card";
 import classes from "./Services.module.css";
 
 //Icons
-import { UilLaptop, UilArrowRight, UilBrowser, UilApps } from "@iconscout/react-unicons";
+import {
+  UilLaptop,
+  UilBrowser,
+  UilApps,
+} from "@iconscout/react-unicons";
 
 export default function Services() {
   return (
@@ -11,50 +16,39 @@ export default function Services() {
           <div className={classes.services_title_container}>
             <h3 className={classes.services_title}>What do i offer?</h3>
             <p className={classes.services_description}>
-              With over 5 years of experience in various technologies, I can
-              make your project a reality.
+              With over five years of experience in UX/UI design, web design,
+              and app design, I offer creative and functional solutions. My
+              approach is based on understanding user needs to create intuitive
+              and engaging interfaces. With strong skills in visual design and
+              user experience, I ensure high-quality results and client
+              satisfaction.
             </p>
           </div>
           <div className={classes.services_container}>
-            <div>
-              <div className={classes.card_container}>
-                <div className={classes.services_icon}><UilBrowser size="40" color="#ed9f31" /></div>
-                <a className={classes.card_title} href="#">UX / UI Design</a>
-                <p className={classes.card_text}>
-                  The phrasal sequence of the is now so that many campaign and
-                  benefit
-                </p>
-                <div className={classes.card_link}>
-                  <a href="#" className={classes.link}>Read more <UilArrowRight size="25" color="#ed9f31"/></a>
-                </div>
-              </div>
-            </div>
-            <div>
-            <div className={classes.card_container}>
-                <div className={classes.services_icon}><UilLaptop size="40" color="#ed9f31" /></div>
-                <a className={classes.card_title} href="#">Web Design</a>
-                <p className={classes.card_text}>
-                  The phrasal sequence of the is now so that many campaign and
-                  benefit
-                </p>
-                <div className={classes.card_link}>
-                  <a href="#" className={classes.link}>Read more <UilArrowRight size="25" color="#ed9f31"/></a>
-                </div>
-              </div>
-            </div>
-            <div>
-            <div className={classes.card_container}>
-                <div className={classes.services_icon}><UilApps size="40" color="#ed9f31" /></div>
-                <a className={classes.card_title} href="#">App Design</a>
-                <p className={classes.card_text}>
-                  The phrasal sequence of the is now so that many campaign and
-                  benefit
-                </p>
-                <div className={classes.card_link}>
-                  <a href="#" className={classes.link}>Read more <UilArrowRight size="25" color="#ed9f31"/></a>
-                </div>
-              </div>
-            </div>
+            <Card
+              icon={<UilBrowser size="40" color="#ed9f31" />}
+              title={"UX / UI Design"}
+              description={
+                "Develop your project thinking about having the best user experience by designing visually attractive and aesthetic elements."
+              }
+              linkText={"Read More "}
+            />
+            <Card
+              icon={<UilLaptop size="40" color="#ed9f31" />}
+              title={"Web Design"}
+              description={
+                "Crafting engaging websites with intuitive navigation and stunning visuals to boost your online presence effectively."
+              }
+              linkText={"Read More "}
+            />
+            <Card
+              icon={<UilApps size="40" color="#ed9f31" />}
+              title={"App Design"}
+              description={
+                "Creating sleek, user-friendly apps with seamless navigation and visually appealing interfaces to enhance user experience."
+              }
+              linkText={"Read More "}
+            />
           </div>
         </div>
       </section>
