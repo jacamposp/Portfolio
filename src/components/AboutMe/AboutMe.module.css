@@ -87,12 +87,12 @@
 .dataItemContainer {
   display: flex;
   flex-direction: row;
+  border-top: 1px solid #dddddd;
 }
 
 .dataItem {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #dddddd;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -115,22 +115,56 @@
     width: 100%;
   }
 
-  .skillsContainer{
+  .skillsContainer {
     width: 100%;
   }
-  
-  .skillsColumn{
+
+  .skillsColumn {
     display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
     margin-top: 3rem;
   }
 
-  .skillsContent{
+  .skillsContent {
     margin: 10px auto;
   }
 
   .tableContainer {
     flex-direction: column;
+  }
+}
+
+@media (768px <= width <= 1024px) {
+  .AboutMeContainer {
+    flex-direction: column;
+  }
+
+  .AboutMe {
+    padding: 0;
+    width: 100%;
+  }
+
+  .skillsContainer {
+    width: 100%;
+  }
+
+  .skillsColumn {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .skillsContent {
+    margin: 10px auto;
+  }
+
+  .tableContainer {
+    flex-direction: column;
+  }
+
+  .dataItemContainer {
+    justify-content: space-around;
   }
 }

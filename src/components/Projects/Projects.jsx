@@ -13,8 +13,8 @@ import classes from "./Projects.module.css";
 export default function Projects() {
   return (
     <>
-      <section className="container">
-        <div id="projects">
+      <section className="container" id="projects">
+        <div>
           <div className={classes.projects_Text}>
             <h3>My Works & Projects</h3>
             <p>Brief description and demo of my main projects.</p>
@@ -27,6 +27,8 @@ export default function Projects() {
           <Image src={img4} alt="demo img" />
           <Image src={img5} alt="demo img" />
           <Image src={img6} alt="demo img" />
+          <Image src={img1} alt="demo img" />
+          <Image src={img2} alt="demo img" />
         </div>
         <p style={{ textAlign: "center" }}>Section on construction</p>
       </section>

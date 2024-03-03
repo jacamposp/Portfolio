@@ -9,8 +9,8 @@
   line-height: 1.5rem;
 }
 
-.titleContainer p{
-    font-size: 15px;
+.titleContainer p {
+  font-size: 15px;
 }
 
 .form_container {
@@ -76,13 +76,19 @@
   padding-top: 5rem;
 }
 
-.info_container a{
-    text-decoration: none;
-    color: var(--darkGrey);
+.info_container a {
+  text-decoration: none;
+  color: var(--darkGrey);
 }
 
 @media (width <= 480px) {
-  .form_container{
+  .form_container {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (768px <= width <= 1024px) {
+  .form_container {
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
   }
 }

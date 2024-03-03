@@ -21,11 +21,11 @@ export default function Card({ title, description, linkText, icon }) {
           {title}
         </a>
         <p className={classes.card_text}>{description}</p>
-        <div className={classes.card_link}>
+        {/* <div className={classes.card_link}>
           <a role="button" className={classes.link}>
             {linkText} <UilArrowRight size="25" color="#ed9f31" />
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -3,12 +3,12 @@ import Button from "../UI/Button";
 import classes from "./ContactMe.module.css";
 
 //icons
-import { UilPhone, UilEnvelope } from '@iconscout/react-unicons'
+import { UilPhone, UilEnvelope } from "@iconscout/react-unicons";
 
 export default function ContactMe() {
   return (
     <>
-      <section className="greybg" id="contact" style={{height:"100vh"}}>
+      <section className="greybg" id="contact">
         <div className={"container"}>
           <div>
             <div className={classes.titleContainer}>
@@ -39,30 +39,50 @@ export default function ContactMe() {
                     </div>
                   </div>
                   <div>
-                    <Button moveTo={'contact'}>Send Message</Button>
+                    <Button moveTo={"contact"}>Send Message</Button>
                   </div>
                 </form>
               </div>
               <div className={classes.info_container}>
-                <div style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"20px"}}>
-                  <div><UilPhone size="20" color="#000"/></div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: "20px",
+                  }}
+                >
+                  <div>
+                    <UilPhone size="20" color="#000" />
+                  </div>
                   <div>
                     <h5>Phone</h5>
                     <a href="tel:+506 60377784">+506 6037-7784</a>
                   </div>
                 </div>
-                <div style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"20px"}}>
-                  <div><UilEnvelope size="20" color="#000"></UilEnvelope></div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: "20px",
+                  }}
+                >
+                  <div>
+                    <UilEnvelope size="20" color="#000"></UilEnvelope>
+                  </div>
                   <div>
                     <h5>Email</h5>
-                    <a href="mailto:jcamposp10@gmail.com">jcamposp10@gmail.com</a>
+                    <a href="mailto:jcamposp10@gmail.com">
+                      jcamposp10@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <p style={{textAlign:'center'}}>Section on construction</p>
+        <p style={{ textAlign: "center" }}>Section on construction</p>
       </section>
     </>
   );
