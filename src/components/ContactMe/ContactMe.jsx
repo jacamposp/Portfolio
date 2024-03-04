@@ -1,11 +1,34 @@
+import React, { useRef } from "react";
+
 import Button from "../UI/Button";
 
 import classes from "./ContactMe.module.css";
+
+import emailjs from "@emailjs/browser";
 
 //icons
 import { UilPhone, UilEnvelope } from "@iconscout/react-unicons";
 
 export default function ContactMe() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_usi4sqd", "template_fh16k5o", form.current, {
+        publicKey: "dY4Ajk2IGCmaO5nkj",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <>
       <section className="greybg" id="contact">
@@ -17,20 +40,20 @@ export default function ContactMe() {
             </div>
             <div className={classes.form_container}>
               <div className={classes.formBg}>
-                <form action="">
+                <form ref={form} onSubmit={sendEmail}>
                   <div className={classes.form_grid}>
                     <div className={classes.name}>
-                      <input type="text" placeholder="Name:" />
+                      <input type="text" placeholder="Name:" name="name" />
                     </div>
                     <div className={classes.email}>
-                      <input type="text" placeholder="Email:" />
+                      <input type="email" placeholder="Email:" name="email" />
                     </div>
                     <div className={classes.subject}>
                       <input type="text" placeholder="Subject:" />
                     </div>
                     <div className={classes.message}>
                       <textarea
-                        name="comments"
+                        name="message"
                         id="commentss"
                         cols="30"
                         rows="10"
@@ -39,7 +62,7 @@ export default function ContactMe() {
                     </div>
                   </div>
                   <div>
-                    <Button moveTo={"contact"}>Send Message</Button>
+                    <Button type="submit">Send Message</Button>
                   </div>
                 </form>
               </div>
