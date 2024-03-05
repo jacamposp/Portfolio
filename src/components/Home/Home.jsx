@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 
-import Button from "../UI/Button";
+import Button from "../UI/Button/Button";
 import classes from "./Home.module.css";
 
 import avatar from "../../assets/Avatar3.png";
@@ -63,7 +63,9 @@ export default function Home() {
               </p>
             </div>
             <div className={classes.contact}>
-              <Button moveTo={'contact'} smooth={true} duration={500}>Contact Me</Button>
+              <Button moveTo={"contact"} smooth={true} duration={500}>
+                Contact Me
+              </Button>
             </div>
             <div className={classes.avatar}>
               <div>
