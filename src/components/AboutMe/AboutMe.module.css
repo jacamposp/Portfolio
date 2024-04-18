@@ -100,6 +100,10 @@
   max-width: 22rem;
 }
 
+.dataItem p {
+  margin: 0;
+}
+
 .dataItem .description {
   font-size: 0.75rem;
   text-wrap: balance;

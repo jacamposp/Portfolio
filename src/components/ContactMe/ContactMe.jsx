@@ -1,7 +1,8 @@
+//components
 import Form from "../UI/Form/Form";
-
+import Text from "../UI/Text/Text";
+//css
 import classes from "./ContactMe.module.css";
-
 //icons
 import { UilPhone, UilEnvelope } from "@iconscout/react-unicons";
 
@@ -12,8 +13,8 @@ export default function ContactMe() {
         <div className={"container"}>
           <div>
             <div className={classes.titleContainer}>
-              <h3>Get In Touch!</h3>
-              <p>Lets Discuss Your Project</p>
+              <Text Tag={"h2"}>Get In Touch!</Text>
+              <Text Tag={"p"}>Lets Discuss Your Project</Text>
             </div>
             <div className={classes.form_container}>
               <div className={classes.formBg}>
