@@ -1,12 +1,10 @@
+//components
 import Card from "./Card";
+import Text from "../UI/Text/Text";
+//css
 import classes from "./Services.module.css";
-
 //Icons
-import {
-  UilLaptop,
-  UilBrowser,
-  UilApps,
-} from "@iconscout/react-unicons";
+import { UilLaptop, UilBrowser, UilApps } from "@iconscout/react-unicons";
 
 export default function Services() {
   return (
@@ -14,15 +12,17 @@ export default function Services() {
       <section className={`greybg`} id="services">
         <div className={"container"}>
           <div className={classes.services_title_container}>
-            <h3 className={classes.services_title}>What do i offer?</h3>
-            <p className={classes.services_description}>
+            <Text Tag={"h3"} className={classes.services_title}>
+              What do i offer?
+            </Text>
+            <Text Tag={"p"} className={classes.services_description}>
               With over five years of experience in UX/UI design, web design,
               and app design, I offer creative and functional solutions. My
               approach is based on understanding user needs to create intuitive
               and engaging interfaces. With strong skills in visual design and
               user experience, I ensure high-quality results and client
               satisfaction.
-            </p>
+            </Text>
           </div>
           <div className={classes.services_container}>
             <Card

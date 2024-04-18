@@ -1,6 +1,8 @@
 import { TypeAnimation } from "react-type-animation";
-
+//components
 import Button from "../UI/Button/Button";
+import Text from "../UI/Text/Text";
+//css
 import classes from "./Home.module.css";
 
 import avatar from "../../assets/Avatar3.png";
@@ -17,10 +19,10 @@ export default function Home() {
         <div className="container">
           <div className={classes.home_Container}>
             <div className={classes.name}>
-              <h1>Joel Campos Porras</h1>
+              <Text Tag={"h1"}>Joel Campos Porras</Text>
             </div>
             <div className={classes.job}>
-              <p>
+              <Text Tag={"p"}>
                 I'm{" "}
                 <TypeAnimation
                   sequence={[
@@ -38,7 +40,7 @@ export default function Home() {
                   className="typewrite text-amber-500"
                   repeat={Infinity}
                 />
-              </p>
+              </Text>
             </div>
             <div className={classes.logos}>
               <div>
@@ -56,11 +58,11 @@ export default function Home() {
               </div>
             </div>
             <div className={classes.description}>
-              <p>
+              <Text Tag={"p"}>
                 I’m a Web developer & I’m very passionate and dedicated to my
                 work. I have acquired the skills and knowledge necessary to make
                 your project a success.
-              </p>
+              </Text>
             </div>
             <div className={classes.contact}>
               <Button moveTo={"contact"} smooth={true} duration={500}>
